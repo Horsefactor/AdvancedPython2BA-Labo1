@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Page where you can add a joke in (add in 'Webapp.py' file) -->
+
+<html>
+    
+    <head>
+        <title>Ajoutez en une !</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="static/styles.css" type="text/css" />
+    </head>
+
+    <body>
+        <nav>
+             <ul>
+                 <li class="MenuC"><a href="index">Catégories</a>
+                    <ul class ="submenu">
+                        <li><a href ="Humnoir">Humour noir</a></li>
+                        <li><a href ="Carambar">Blague Carambar</a></li>
+                        <li><a href ="Unk">Inconnue</a></li>
+                    </ul>
+                 </li>
+                 <li class="Menu"><a href="loginform">Se connecter</a></li>
+                 <li class="Menu"><a href="add">Ajouter</a></li>
+                 <li class="Menu"><a href="index">Accueil</a></li>
+             </ul>
+        </nav>
+        <h1>Ajoutez en une !</h1>
+        <center>
+            <form method="post" action="addjoke">
+                <p>
+                    <label> Catégorie<br/>
+                        <select name='Categorie'>
+                            <optgroup label="principale">
+                                    <option value ="Carambar">Carambar</option>
+                                    <option value ="Humour Noir">Humour Noir</option>
+                            </optgroup>
+                            <optgroup label="autres ">
+                                    <option value ="Inconnue">Inconnue</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>Titre<br/><input type="text" name="title" maxlength="128" required></label>
+                </p>
+                <p>
+                    <label>Blague<br/><textarea name="contenu" rows="5" cols="40" required placeholder="Racontez ici votre blague !"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Ajouter</button>
+                </p> 
+            </form>
+        </center> 
+    </body>
+</html> 

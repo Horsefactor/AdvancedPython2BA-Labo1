@@ -1,0 +1,116 @@
+body{
+    /*Police used*/
+    font-family: 'Times New Roman', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*reset css, make the menu formating easier*/
+    margin: 0px;
+    padding: 0px;
+    /*image de fond*/
+    background: url('fond.png'),linear-gradient(-225deg,#5393c8 40%,#7eb1dc 60%);
+    background-attachment: fixed;
+}
+nav {
+    /*Formatting the Menu*/
+    position: fixed;
+    width: 100%;
+    background-color: rgb(29, 29, 56);
+    top: 0px;
+}
+nav > ul {
+    /*reset css, make the menu formating easier*/
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul::after{
+    /*reset css, make the menu formating easier*/
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.MenuC {
+    /*Position of 'Categorie'*/
+    float: left;
+    position: relative;
+}
+.Menu {
+    /*Position of 'acceuil', 'ajouter' and 'se connecter'*/
+    float: right;
+    position: relative;
+}
+
+nav > ul > li > a {
+    /*Put the police white for making it clearer*/
+    padding: 20px 30px;
+    color: rgb(255, 255, 255);
+
+}
+nav li {
+    /*Formatting the list*/
+    list-style-type:none;
+}
+.submenu {
+    /*Hide the submenu*/
+    display: none;
+    color:rgb(0, 0, 0);
+}
+nav a {
+    /*Formating all route of the menu*/
+    display: inline-block;
+    text-decoration: none;
+
+}
+nav li:hover .submenu{
+    /*Make the submenu appear as you pass the mouse throughout the category menu*/
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.submenu li{
+    /*Formating the submenu*/
+    border: 1px solid rgb(17, 17, 71);
+}
+
+.submenu li a{
+    /*Formating element of the submenu*/
+    padding: 15px 30px;
+    font-size: 13px;
+    background-color: white;
+    width: 270px;
+}
+h1 {
+    /*Formatting main titles*/
+    margin-top: 100px;
+    text-align: center;
+    width : 50%;
+    color :rgb(17, 17, 71);
+    margin-left: auto; 
+    margin-right: auto;
+}
+.msg {
+    /*centering the 'warning' paragraf nad make it noticeable*/
+    text-align: center;
+    width : 50%;
+    color :white;
+    font-style: italic;
+    margin-left: auto; 
+    margin-right: auto;
+    text-shadow: 1px 1px 1px black;
+    
+}
+#mylist {
+    /*Formating joke list*/
+    text-align: center;
+    width : 50%;
+    border-width: 2px;
+    border-style: groove;
+    border-color:rgb(17, 17, 71);
+    box-shadow: 1px 1px 1px rgb(17, 17, 71);
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 100px;
+    background-color : white;
+    border-radius: 10px;
+}

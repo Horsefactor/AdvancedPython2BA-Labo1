@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<!-- Page where you can log in  (loginform in 'Webapp.py' file) -->
+
+<html>
+    <head>
+        <title>Se connecter</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="static/styles.css" type="text/css" />
+    </head>
+    <body>
+        <nav>
+             <ul>
+                 <li class="MenuC"><a href="index">Catégories</a>
+                    <ul class ="submenu">
+                        <li><a href ="Humnoir">Humour noir</a></li>
+                        <li><a href ="Carambar">Blague Carambar</a></li>
+                        <li><a href ="Unk">Inconnue</a></li>
+                    </ul>
+                 </li>
+                 <li class="Menu"><a href="loginform">Se connecter</a></li>
+                 <li class="Menu"><a href="add">Ajouter</a></li>
+                 <li class="Menu"><a href="index">Accueil</a></li>
+             </ul>
+        </nav>
+        <h1>MangezDuClown</h1>
+        <center>
+            <form action ='/login' method ="post">
+                <p> pseudo: <input type = 'text' name = 'pseudo'/></p>
+                <p><input type ="submit" value ="Se connecter"/></p>
+           </form >
+        </center>
+    </body>
+</html>

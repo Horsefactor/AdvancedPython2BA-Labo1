@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Main page (index in 'Webapp.py' file) -->
+
+<html>
+    <head>
+        <title>MangerDuClown</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="static/styles.css" type="text/css" />
+    </head>
+    <body>
+        <nav>
+             <ul>
+                 <li class="MenuC"><a href="index">Catégories</a>
+                    <ul class ="submenu">
+                        <li><a href ="Humnoir">Humour noir</a></li>
+                        <li><a href ="Carambar">Blague Carambar</a></li>
+                        <li><a href ="Unk">Inconnue</a></li>
+                    </ul>
+                 </li>
+                 <li class="Menu"><a href="loginform">Se connecter</a></li>
+                 <li class="Menu"><a href="add">Ajouter</a></li>
+                 <li class="Menu"><a href="index">Accueil</a></li>
+             </ul>
+        </nav>
+        <h1>Bienvenue {{pseudo}}, sur notre site de blagues, amusez vous bien!</h1>
+        <br/>
+        <p class="msg">Le contenu de ce site peut heurter la sensibilité de certaine personne, nous n'en sommes pas responsable.</p>
+        <br/>
+        <p class="msg">
+            Nous vous encourageons à trier les blagues par catégorie via le menu déroulant en haut à droite. 
+            Ainsi vous pourrez lire du contenu qui vous correspond réellement !
+            <br/> L'ensemble des blagues de tout l'auditoire sont rassemblés ci-dessous, c'est dire si le niveau est élevé !
+        </p>
+        <br/>
+        <p class="msg">
+            Nous vous encourageons à vous connecter avant d'ajouter une blague pour que tout le monde puisse voir qui l'a ajoutée.
+        </p>
+        <br/>
+        <div id= "mylist">
+            <p>{{jokes}}</p>
+        </div>
+        
+    </body>
+</html> 
