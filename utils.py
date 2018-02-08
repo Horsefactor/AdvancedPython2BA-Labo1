@@ -11,16 +11,19 @@ def fact(n):
     Throws: ValueError if n < 0
     """
     try:
-        while n > 0:
         fact = 1
-        fact = fact*n
-        n -= 1
-   
+        if n > 0 :
+            while n > 0:
+                fact = fact*n
+                n -= 1
+            return fact
+        
+        if n == 0 :
+            return fact
+
     except :
         pass
 
-    finally :  
-         return fact
     
 
 def roots(a, b, c):
@@ -31,16 +34,31 @@ def roots(a, b, c):
           to the roots of the ax^2 + bx + c polynomial.
     """
     delta = b**2 - 4*a*c
-    if delta >= 0 :
-        root = ((-b + sqrt(delta))/(2*a),(-b - sqrt(delta))/(2*a))
-        return root
-    
-    if delta < 0 :
-        return None
-    
 
+    if delta > 0 :
+        root = (-b + sqrt(delta))/(2*a),(-b - sqrt(delta))/(2*a)
+        return root
+
+    if delta == 0 :
+        root = (-b/(2*a))
+
+    if delta < 0 :
+        return ()
+    
+def ff(x):
+    return (x**2 - 1)
 
 def integrate(function, lower, upper):
+
+
+    m = (lower+upper)/2
+    fa = function(lower)
+    fb = function(upper)
+    fm = function(m)
+
+    return ((upper - lower)/6)*(fa + 4*fm+fb)
+
+
     """Approximates the integral of a fonction between two bounds
     
     Pre: 'function' is a valid Python expression with x as a variable,
@@ -56,4 +74,4 @@ def integrate(function, lower, upper):
 if __name__ == '__main__':
     print(fact(5))
     print(roots(1, 0, 1))
-    print(integrate('x ** 2 - 1', -1, 1))
+    print(integrate(ff, 0, 5))
