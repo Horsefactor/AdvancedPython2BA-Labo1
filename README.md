@@ -1,2 +1,6 @@
 # AdvancedPython2BA-Labo1
 MDC
+
+Dans le cadre du mini-projet, nous avons développé une application web durant les trois dernières séances de labo. Le développement d’un projet informatique d’une telle ampleur a été l’occasion d’appliquer tout ce qui a été vu durant les cours théoriques et pratiqué durant les cinq premières semaines de labo. 
+Après réflexion, nous avons décidé de joindre l’humour au travail et nous nous sommes lancés dans la réalisation d’un site à but humoristique « MangezDuClown ». Le but de ce site web étant de rassembler les meilleures (ou les pires) blagues des utilisateurs sur un même site. Les blagues une fois sur le site peuvent être triées et ainsi chacun à accès au contenu qui lui convient !  
+Pour plus de contact avec l’utilisateur nous avons incorporé un système de connexion, gardant en mémoire le pseudo de l’utilisateur. Ce pseudo serra utilisé par après pour souhaiter la bienvenue au nouvel arrivant et lorsque l’utilisateur veut ajouter une blague afin d’en identifier l’auteur. Cependant cette fonctionnalité n’est pas obligatoire pour le bon fonctionnement du site. Nous avons donc mis par défaut le pseudo sur « Monsieur anonyme ». 
